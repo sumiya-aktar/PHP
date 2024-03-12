@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(0, 255, 38);
+            margin: 0%;
+        }
+        *{
+          margin:  0%; 
+          padding: 0%;
+        }
+        .navber ul{
+             list-style-type: none;
+             background-color: rgb(210, 30, 189);
+             padding: 10px;
+             display: flex;
+
+             
+
+        }
+       .navber a{
+         text-decoration: none;
+         padding: 10px;
+       }
+      .sidber ul{
+          list-style-type: none;
+          background-color: brown;
+          width: 20%;
+          height: 400px;
+         
+            
+      }
+      .sidber a{
+        text-decoration: none; 
+        padding: 10px;
+      }
+      .dropdown{
+        display: block;
+      }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="navber">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class><a href="#">content</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">content</a></li>
+                  </ul>
+                </li>
+            </ul>
+            
+        </nav>
+        <div>
+           <div class="sidber">
+             <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">content</a></li>
+              </ul>
+            </div>
+
+           
+           
+
+        </div>
+    </div>
+</body>
+</html>
