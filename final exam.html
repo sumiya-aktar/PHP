@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+      
+     <form class="registrationForm">
+         <fieldset>
+             <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name" placeholder="jony" required>
+             </div>
+             <br>
+             <div>
+                <label for="name">Address:</label>
+                <input type="textarea" id="address" name="address"  placeholder="enter you pleace" required>
+             </div>
+              <br>
+              <div class="radio">
+                  <label >Gender:</label>
+                  <input type="radio" id="Female" name="gender" value="Female">
+                  <label for="Female">Female</label>
+                  <input type="radio" id="male" name="gender" value="male">
+                  <label for="male">male</label>
+                  <input type="radio" id="other" name="gender" value="other">
+                  <label for="Open">Other</label>
+              </div>
+               <div class="checkbox">
+                  <label >Course:</label>
+                  <input type="checkbox" id="wdpf"  name="Course" value="wdpf">
+                  <label for="wdpf">WDPF</label>
+                  <input type="checkbox" id="netf"  name="Course" value="net">
+                  <label for="wdpf">Net</label>
+                  <input type="checkbox" id="C#"  name="Course" value="C#">
+                  <label for="c#">C#</label>
+               </div>
+               <div>
+                 <label for="email">Email:</label>
+                 <input type="text" id="email" name="Email" required>
+               </div>
+                  <br>
+               <label for="password">password:</label>
+               <input type="text" id="password" name="password" required>
+
+               <br>
+               <label for="password">password:</label>
+               <input type="text" id="password" name="password" required>
+                <div>
+              <button type="button" onclick="openDynamicWindow()" style="margin-left: 240px;" >Submit</button>
+                </div>  
+            </fieldset>
+        </form>
+
+     <script>
+          
+     class User {
+        constructor (Name,Address,Gender,Coures,Email,Password,){
+              this.Name = Name;
+              this. Address= Address; 
+              this. Gender= Gender;  
+              this. Coures= Coures;  
+              this. Email= Email; 
+              this. Password= Password; 
+              
+              
+        }
+
+
+     };
+
+     function openDynamicWindow(){
+        const Name = document.getElementById("Name").Value;
+        const Address = document.getElementById("Address").Value;
+        
+        const Gender= document.qourySelectorAll(input["Name=Gender"].chacked).Value;
+        const Coures= document.qourySelectorAll(input["Name=Coures"].chacked).Value;
+        const Email = document.getElementById("Email").Value;
+        const Password = document.getElementById("Password").Value;
+        
+  const User = new User (Name,Address,Gender,Coures,Email,Password)
+    User.registrationForm()
+
+    const dynamicWindow = window.open('', ' ', 'width=400,height=400');
+        dynamicWindow.document.write(`<h2>Registration Details</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Address:</strong> ${address}</p>
+        <p><strong>Gender:</strong> ${gender}</p>
+        <p><strong>Course:</strong> ${courses.join(", ")}</p>
+        <p><strong>Email:</strong> ${email}</p>`);
+   
+
+
+     };
+
+
+
+     </script>
+
+
+
+
+</body>
+</html>
