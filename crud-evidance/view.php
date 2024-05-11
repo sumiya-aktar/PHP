@@ -34,7 +34,7 @@ if (isset($_GET['deleteid'])){
             $query = mysqli_query($conn, $sql);
             echo "<table class='table table-success'>
              <tr>
-                <th>id</th>
+                <th>Name</th>
                 <th>name</th>
                 <th>age</th>
                 <th>email</th>
